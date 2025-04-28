@@ -1,0 +1,36 @@
+article {
+    display: flex;
+    justify-content: center;
+}
+
+article > div {
+    font-size: 1.2rem;
+    max-width: 80ch;
+    margin: 0 6ch;
+    text-align: center;
+}
+
+article h1 {
+    font-size: 2rem;
+}
+
+article span {
+    font-weight: bold;
+}
+
+
+article label {
+    font-size: 1.6rem;
+}
+
+form {
+    display: flex;
+}
+
+#question {
+    flex-grow: 1;
+    margin-right: 2ch;
+    border: none;
+    border-bottom: solid black;
+}
+

@@ -1,0 +1,119 @@
+:root {
+    --highlight: #ba0046;
+    --shadow: #6a001c;
+}
+
+body { margin: 0; }
+
+header {
+    height: 8rem;
+    padding: 2rem 2ch 20px;
+    background-color: #f7f7f7;
+    display: flex;
+}
+
+header > img { max-height: 100% }
+
+header > div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header a {
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: 6rem;
+    color: white;
+    background-color: var(--highlight);
+    margin: 1rem 0;
+    padding: 0 2ch;
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 10px 10px var(--shadow);
+}
+
+header a:active {
+    translate: 10px 10px;
+    box-shadow: none;
+}
+
+@media (max-width: 110ch) {
+    header > img { display: none; }
+}
+@media (max-width: 70ch) {
+    header a { font-size: 1.5rem; }
+}
+
+#divider {
+    height: 1rem;
+    background-color: #621b40;
+    margin-bottom: 20px;
+}
+
+#sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#sections a {
+    box-sizing: border-box;
+    width: calc(40ch * 2);
+    padding: 2rem;
+    margin: 0 2ch 3rem;
+    background-color: var(--highlight);
+    border-radius: 4rem;
+    box-shadow: 10px 10px var(--shadow);
+    text-decoration: none;
+}
+
+#sections a:active {
+    translate: 10px 10px;
+    box-shadow: none;
+}
+
+#sections a > div {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 3rem;
+}
+
+.title_container {
+    display: flex;
+    width: 100%;
+    height: 8rem;
+}
+
+#sections h1 {
+    margin: 0;
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: underline;
+    overflow: auto;
+}
+@media (max-width: 70ch) {
+    #sections h1 {
+        font-size: 1rem;
+    }
+}
+
+#sections img {
+    display: block;
+    height: 100;
+    object-fit: cover;
+    border-radius: 3rem 0 1.5rem 0;
+}
+
+.body_container {
+    padding: 0 2rem;
+    margin: 0.6ch;
+    color: black;
+}
+

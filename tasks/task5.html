@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Who Dunnit!</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="task5.css">
+    <link rel="stylesheet" href="tabs.css">
+    <link rel="icon" href="/favicon.ico">
+    <script defer src="task_validate.js"></script>
+</head>
+<body>
+    <header>
+        <img src="/logo-shu.svg" alt="SHU Logo">
+        <div>
+            <a href="/" class="nav-button">Back To Homepage</a>
+        </div>
+    </header>
+
+
+    <div id="tabs">
+        <label for="crimsonveil_radio">Operation Crimson Veil</label>
+        <label for="silverdawn_radio">Operation Silver Dawn</label>
+        <label for="globalbank_radio">Horizon Global Bank</label>
+    </div>
+    <form id="tabradios">
+        <input type="radio" name="tabs" id="crimsonveil_radio" checked>
+        <input type="radio" name="tabs" id="silverdawn_radio">
+        <input type="radio" name="tabs" id="globalbank_radio">
+    </form>
+
+
+    <div id="pages">
+        <article>
+            <div class="nested_tabs">
+                <label for="crimson_case_radio">Case File</label>
+                <label for="crimson_actor1_radio">Threat Actor - BitShade</label>
+                <label for="crimson_actor2_radio">Thread Actor - Employee X</label>
+            </div>
+            <form class="nested_tabradios">
+                <input type="radio" name="tabs" id="crimson_case_radio" checked>
+                <input type="radio" name="tabs" id="crimson_actor1_radio">
+                <input type="radio" name="tabs" id="crimson_actor2_radio">
+            </form>
+
+            <div class="nested_pages">
+                <article>
+                    <div>
+                        <h1>Operation Crimson Veil</h1>
+                        Date of Incident: May 5, 2025<br>
+                        Case File Number: CYBER-2025-05-05-CRIMSON<br>
+
+                        <h1>Case Overview</h1>
+                        On May 5, 2025, TechWave Solutions, a leading IT consulting and software development firm based in Birmingham, UK, experienced a significant data breach caused by an insider threat. The attack was carried out by a disgruntled employee who exploited their access privileges to steal sensitive data and undermine the company’s operations.<br>
+
+                        <h1>Initial Findings</h1>
+                        The incident began when Employee X, a senior software engineer with privileged access to company databases, began downloading large volumes of internal data. The data included intellectual property, client contracts, and proprietary software code, which were all highly confidential. Employee X used their credentials to access sensitive internal files and transferred them to an external cloud storage service that they controlled. The exfiltrated data was then sold to a competitor.<br><br>
+
+                        The breach was discovered after a series of unusual activities were detected on the company’s internal monitoring system, which showed unauthorized data transfers. Despite the attacker’s efforts to cover their tracks by using encrypted communication channels, the IT team was able to trace the activity back to the insider. The company immediately terminated Employee X’s access and began an internal investigation into the breach.<br>
+
+                        <h1>What Happened Next?</h1>
+                        The attack resulted in a significant loss of intellectual property, which could give competitors an unfair advantage, and potentially damage the trust that clients had placed in TechWave Solutions. The firm had to notify affected clients and take steps to secure its systems against further insider threats.
+
+                        <h1>What Was Left Behind?</h1>
+                        A review of access logs revealed that Employee X accessed files beyond their scope of work. Data was downloaded between 2:00 AM and 4:00 AM, a time period outside regular working hours, which raised suspicion. Logs also showed that large amounts of data were transferred to an external cloud service account, which was later traced back to a private account owned by the employee.<br><br>
+
+                        The investigation uncovered encrypted emails sent from Employee X’s company email account. These messages included links to external storage services, indicating that the employee was planning to exfiltrate data over time. Further analysis of the employee’s messages revealed communications with external parties, possibly competitors, discussing the data being transferred.<br><br>
+
+                        Forensic analysis showed evidence of file compression and encryption tools being used on company servers to hide the data transfer. A total of 10GB of intellectual property, including source code, software development plans, and customer contracts, was identified as exfiltrated and stored externally.
+
+                        <h1>Anything Else?</h1>
+                        Employee X was found to have been involved in a dispute with the management regarding their compensation package and career progression, which may have motivated the attack. The employee had also recently submitted their resignation, which coincided with the onset of the data exfiltration activities.<br><br>
+
+                        Interviews with colleagues confirmed that Employee X had exhibited unusual behavior leading up to the incident, such as staying late at the office and accessing systems outside their usual responsibilities. There were reports of increased frustration with the company’s management, adding further context to the motive.
+
+                        <h1>So.. Who Dunnit?</h1>
+                        1. Who were the potential attackers? What motives do the threat actors have, and what capabilities do they hold?<br>
+                        2. How did the attackers attempt to cover their tracks? Were they simple or complex?<br>
+                        3. What sort of techniques did the attacker use to get their way? Consider the implications and how successful the attackers could be with their attacks.<br><br>
+
+                        By using the information known about the attackers and the context gained by the security team, it’s up to you to determine who could have carried out the attack!<br><br><br>
+
+                        <label for="question1">Which group was responsible?</label>
+                        <form onsubmit="check_answer(this, 'ZW1wbG95ZWUgeA=='); return false;">
+                            <input type="text" id="question1" class="task5_input">
+                            <input type="submit" value="Check">
+                        </form>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <h1>BitShade</h1>
+                        Likely Location: Europe<br>
+                        Possible Job: Unknown
+
+                        <h1>Who are they?</h1>
+                        BitShade is a “Gray Hat” hacker, they believe they are attacking “problematic” parts of society and do so for no financial gain, The will also attack smaller companies, purely to provide them data on how to improve their security.
+
+                        <h1>What are their motives?</h1>
+                        BitShade will attack a target they view as “wrong” or unjust, usually aiming to send a message about how to go against said “injustice”. When targeting smaller companies, BitShade will usually do so out of randomness, choosing a company that will likely have little security and defense, purely so they can provide data to increase the victims company security.
+
+                        <h1>What are their tactics?</h1>
+                        BitShade will attack with social engineering, as well as brute force attacks and phishing, aiming to shutdown a company if they believe them to be a social injustice, however if they attack a small company they will usually leave a note and email privately with instructions on being better.
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <h1>Employee X</h1>
+                        Likely Location: Birmingham<br>
+                        Job: Engineer
+
+                        <h1>Who are they?</h1>
+                        Employee X worked with TechWave for a number of years. They were a senior software engineer with high amounts of internal access to company data.
+
+                        <h1>What are their motives?</h1>
+                        Employee X acts out of emotional, heat of the moment, impulse decisions.
+
+                        <h1>What are their tactics?</h1>
+                        Employee X employs social engineering and physical based attack ideologies. Usually choosing to “work late” so that he can gain further access while the office is empty.
+                    </div>
+                </article>
+
+            </div>
+        </article>
+
+        <article>
+            <div class="nested_tabs">
+                <label for="silver_case_radio">Case File</label>
+                <label for="silver_actor1_radio">Thread Actor - ZeroTrace</label>
+                <label for="silver_actor2_radio">Threat Actor - CipherFox</label>
+            </div>
+            <form class="nested_tabradios">
+                <input type="radio" name="tabs" id="silver_case_radio" checked>
+                <input type="radio" name="tabs" id="silver_actor1_radio">
+                <input type="radio" name="tabs" id="silver_actor2_radio">
+            </form>
+
+            <div class="nested_pages">
+                <article>
+                    <div>
+                        <h1>Operation Silver Dawn</h1>
+                        Date of Incident: April 15, 2025<br>
+                        Case File Number: CYBER-2025-04-15-SILVER
+
+                        <h1>Case Overview</h1>
+                        On April 15, 2025, SafeNet Industries, a cybersecurity firm based in Manchester, UK, experienced a major data breach followed by a ransomware attack. The firm specializes in providing secure cloud storage solutions for businesses in various industries, including finance, healthcare, and government. Due to the sensitive nature of the information they handle, SafeNet Industries has always been considered a highly trusted company in the field.
+
+                        <h1>Initial Findings</h1>
+                        The attack began when an employee opened a phishing email, which contained a malicious attachment. The email appeared to be an official internal memo from the HR department, designed to trick the recipient into opening it. Once opened, the malicious file infected the employee’s system with ransomware, which spread rapidly throughout the internal network.<br><br>
+
+                        While investigating the ransomware incident, the IT security team discovered that the attackers had gained unauthorized access to the internal network by exploiting a zero-day vulnerability in the company’s firewall software. This allowed the attackers to bypass standard security measures and access sensitive company data, including confidential client contracts, employee personal information, and intellectual property. The attackers then exfiltrated the stolen data before locking the files with encryption and demanding a ransom for the decryption keys.
+
+                        <h1>What Happened Next?</h1>
+                        The attackers threatened to release the stolen data publicly unless a ransom payment of 50 Bitcoin (BTC) was made. In response, SafeNet Industries quickly activated their incident response protocols, working with law enforcement and cybersecurity experts to assess the situation. They also notified affected clients and began implementing additional security measures to prevent further compromise.<br><br>
+
+                        The attack posed a significant threat not only to SafeNet Industries' operations but also to the security of its clients, who rely on the company to protect highly sensitive data. The firm’s reputation as a trusted provider of cybersecurity solutions was jeopardized, and there were concerns about the potential leak of client data, which could lead to financial and further reputational damage.
+
+                        <h1>What Was Left Behind?</h1>
+                        A copy of the phishing email was retrieved from one of the affected inboxes. The email was disguised as a memo from HR and included a malicious attachment named “2025_Company_Review.docx.” Email headers show that the email originated from a spoofed domain address, designed to look like an internal SafeNet address.<br><br>
+
+                        Logs show suspicious outbound traffic from the internal network to an external IP address. Large data packets were sent at an unusually high rate. After tracing the IP, it was linked to a known malicious user.<br><br>
+
+                        The ransomware was identified as a variant of “LockRansom-2025”, which encrypts files and appends the ".locked" extension. The malware was observed to have a mechanism that triggers after opening the infected attachment. The encryption was highly effective, rendering over 500GB of data unusable.<br><br>
+
+                        The vulnerability in the firewall software was identified as a zero-day exploit that had been discovered and patched recently, but SafeNet had not yet applied the patch. Exploit code found in the attacker’s scripts allowed unauthorized access to the internal network and compromised security systems.<br><br>
+
+                        The ransom note demanded 50 Bitcoin (BTC) in exchange for the decryption key, and it included threats to release sensitive data online, including employee records and client contracts, if the demand was not met.<br><br>
+
+                        <h1>Anything Else?</h1>
+                        SafeNet industries prides itself on its clean reputation, having many advertisements geared towards this fact. Some voices within the company believe that this attack was not just a coincidence, as while the patched exploit was not fixed on their end, it was relatively unknown as to which firewall they had in use. Only other security companies with an understanding of the most secure firewall software would have any idea of what they used internally. 
+
+                        <h1>So.. who dunnit?</h1>
+                        1. Who were the potential attackers? What motives do the threat actors have, and what capabilities do they hold?<br>
+                        2. How did the attackers attempt to cover their tracks? Were they simple or complex?<br>
+                        3. What sort of techniques did the attacker use to get their way? Consider the implications and how successful the attackers could be with their attacks.<br>
+                        By using the information known about the attackers and the context gained by the security team, it’s up to you to determine who could have carried out the attack!<br><br><br>
+
+                        <label for="question2">Which group was responsible?</label>
+                        <form onsubmit="check_answer(this, 'emVyb3RyYWNl'); return false;">
+                            <input type="text" id="question2" class="task5_input">
+                            <input type="submit" value="Check">
+                        </form>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <h1>ZeroTrace</h1>
+                        Likely Location: US<br>
+                        Possible Job: IT Expert
+
+                        <h1>Who are they?</h1>
+                        CipherFox will usually attack with brute force, trying to enter as quick as possible, even if it means making their presence known. Once in they will spend time perusing data, rarely even copying to their own servers. It seems that most of the time they simply attack just for the love of the thrill.
+
+                        <h1>What are their motives?</h1>
+                        ZeroTrace will attack out of financial gain, hoping to attack “big fish”. They usually target well protected and knowledgeable companies as they are usually the most confident and “cocky”.
+
+                        <h1>What are their tactics?</h1>
+                        ZeroTrace employs as many tactics as they need to breach a system, including ransomware, phishing, spearphishing, social engineering and more.
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <h1>CipherFox</h1>
+                        Likely Location: Sheffield<br>
+                        Possible Job: BustSecurity
+
+                        <h1>Who are they?</h1>
+                        CipherFox is a sole hacker, usually attacking on a whim with little planning.
+
+                        <h1>What are their motives?</h1>
+                        CipherFox doesn’t have any motives, as they usually do things for “fun”. They will spend little time on a target, usually ending their assault at the slightest hint of opposition or resistance.
+
+                        <h1>What are their tactics?</h1>
+                        CipherFox will usually attack with brute force, trying to enter as quick as possible, even if it means making their presence known. Once in they will spend time perusing data, rarely even copying to their own servers. It seems that most of the time they simply attack just for the love of the thrill.
+                    </div>
+                </article>
+
+            </div>
+        </article>
+
+        <article>
+            <div class="nested_tabs">
+                <label for="horizon_case_radio">Case File</label>
+                <label for="horizon_actor1_radio">Threat Actor - Fractured Sky</label>
+                <label for="horizon_actor2_radio">Thread Actor - SPAMURAI</label>
+                <label for="horizon_actor3_radio">Thread Actor - Hack to the Future</label>
+            </div>
+            <form class="nested_tabradios">
+                <input type="radio" name="tabs" id="horizon_case_radio" checked>
+                <input type="radio" name="tabs" id="horizon_actor1_radio">
+                <input type="radio" name="tabs" id="horizon_actor2_radio">
+                <input type="radio" name="tabs" id="horizon_actor3_radio">
+            </form>
+
+            <div class="nested_pages">
+                <article>
+                    <div>
+                        <h1>Horizon Global Bank</h1>
+                        Date of Incident: January 11, 2025<br>
+                        Case File Number: CYBER-2025-01-11-HORIZON<br>
+                        Estimated Financial Loss: $25 million<br>
+                        Data Breached: 500,000 customer accounts, 100,000 credit card numbers, internal communications, and corporate strategy documents.
+
+                        <h1>Case Overview</h1>
+                        Horizon Global Bank, a multinational financial institution, has been the victim of a complex cyber-attack spanning across multiple days. The bank, which has a hefty global presence, has been in the spotlight lately for supposed harbouring of illegal funds in offshore accounts for tax evaders. The attackers have combined insider knowledge and external cyber intrusion tactics to infiltrate the bank’s systems, steal sensitive customer data, manipulate financial transactions, and cause significant operational disruptions. How dare they!<br><br>
+
+                        The bank’s cybersecurity team detected the breach only after a series of unusual transactions were flagged in the bank's internal monitoring systems. By then, the attackers had gained control over critical banking infrastructure and had already started exfiltrating sensitive information. Now, the bank is investigating how the attack unfolded, who was responsible, and how to prevent future incidents. Fortunately for us, the team has gathered some observations for us to consider and gather an understanding of the attacker’s actions and possible interests!<br><br>
+
+                        <h1>Initial Findings</h1>
+                        It was discovered that on the first day of the attack, an employee with elevated privileges logged in from an unusual IP address. The address could be traced back to a foreign country which the bank does not have any branches within. Post-investigation, an employee came forward and admitted to having interacted with an unusual email, indicating detail compromise.<br><br>
+
+                        Across the next few days, multiple access requests were made to customer accounts. These requests were made by multiple employee accounts which did not have the permission to access customer details.<br><br>
+
+                        On the second day, email servers within the bank because showing unusual activity, as high-ranking employees received phishing emails, pretending to be communications from the bank’s external IT team. The emails contained a link to a malicious, fake software that stole credentials from anyone who clicked the link, providing the attacker with further platforms to operate from.
+
+                        <h1>What Happened Next?</h1>
+                        The attackers used a hacked employee account to access sensitive internal communications and banking systems. This employee had recently left the bank, but their credentials were still valid, and no one had flagged the access as suspicious.<br><br>
+
+                        On the third day, the attackers deployed a complex trojan virus into the bank's core transaction systems, which allowed them to manipulate financial records and execute fraudulent transactions. The trojan also stole customer data and transferred copies to external servers.<br><br>
+
+                        On day 4, the attackers began encrypting files and documents within the bank’s network. They then demanded a ransom payment to decrypt the data, threatening to release stolen customer information if the demand wasn’t met. The bank quickly chose to do a full reset of their infected systems and restored lost data with a full backup held on their cloud network, but the data had still been stolen. Passwords were changed and based on evidence, a full employee check was conducted. Weeks after the attack, one employee, who had worked within the main branch for a few months, suddenly resigned with seemingly no work lined up and disappeared.<br><br>
+
+                        <h1>What Was Left Behind?</h1>
+                        When the cybersecurity team conducted a thorough forensic analysis, they found that many of the IP addresses involved in the attack were routed through VPNs from countries with known hacking groups. However, one specific IP address stood out—an IP that had been involved in previous attacks against similar financial institutions.<br><br>
+
+                        The attackers were active during late-night hours, suggesting they may have been operating from a different time zone or attempting to avoid detection.<br><br>
+
+                        Investigations revealed that the tools and techniques used in the attack resembled those commonly associated with certain advanced persistent threat (APT) groups. The malware used in the attack was a variant of a known tool that had been used in previous large-scale financial heists.<br><br>
+
+                        During the investigation, the security team discovered that the compromised employee's credentials were used to bypass multi-factor authentication (MFA) measures, indicating possible insider knowledge about the system vulnerabilities.
+
+                        <h1>Anything Else?</h1>
+                        The attackers had inside knowledge of the bank's systems, including how to bypass certain security measures. The compromised employee may have played a crucial role in enabling the attackers to gain initial access to the bank’s internal network.<br><br>
+
+                        The external group used a combination of phishing, malware, and lateral movement techniques to gain elevated privileges and steal sensitive data. Their use of well-known hacking tools and tactics suggests to the Cyber Security team they are experienced and have previously attacked similar financial institutions.
+
+                        <h1>So.. who dunnit?</h1>
+                        1. Who were the potential attackers? What motives do the threat actors have, and what capabilities do they hold?<br>
+                        2. How did the attackers attempt to cover their tracks? Were they simple or complex?<br>
+                        3. What sort of techniques did the attacker use to get their way? Consider the implications and how successful the attackers could be with their attacks.<br>
+                        By using the information known about the attackers and the context gained by the security team, it’s up to you to determine who could have carried out the attack!<br><br><br>
+
+                        <label for="question3">Which group was responsible?</label>
+                        <form onsubmit="check_answer(this, 'c3BhbXVyYWk='); return false;">
+                            <input type="text" id="question3" class="task5_input">
+                            <input type="submit" value="Check">
+                        </form>
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <h1>FRACTURED SKY</h1>
+                        Hacktivism Group<br><br>
+                        Location: UK, Nationwide<br>
+                        Group Size: 50-100 people
+
+                        <h1>Who are they?</h1>
+                        FRACTURED SKY are a low profile hacktivism group who see themselves as “heroes for justice”. They are based in the UK, operating out of several counties such as South Yorkshire, the Midlands and London.
+
+                        <h1>What are their motives?</h1>
+                        Being “heroes”, they target those who they see as immoral and unethical, employing a variety of tactics to reach their goal. Some of their targets previously have been low level government offices, high profile politicians and even attacking celebrities and television stars, for reasonings that fit their personal agenda.
+
+                        <h1>What are their tactics?</h1>
+                        They will employ a range of attacks and disruptive action against their chosen target, ranging from social engineering, phishing and even break ins during the night. One theme common among their attacks is their attacks don’t lead to financial gain from the victims; however the group isn’t above leaking their gathered data for charitable donations from other hackers and hacker groups.
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <h1>SPAMURAI</h1>
+                        Money Driven Hackers<br><br>
+                        Location: Worldwide<br>
+                        Group Size: 300-500 people
+
+                        <h1>Who are they?</h1>
+                        SPAMURAI are a high profile hacker group, known for their hacking efficiency and demanding nature, forcing their victims to hand over as much money as they can, whether they can afford to or not, before disappearing back into their cohort as they await their next target.
+
+                        <h1>What are their motives?</h1>
+                        Being rogues in all meanings of the word, they will attack indiscriminately, always aiming for the biggest fish they assume they can reel in at that moment. They have been known to accept contracts and have their hacking activities “aimed” by a third party, usually going out of their way to get paid by both their victim and their contractor.
+
+                        <h1>What are their tactics?</h1>
+                        Being as secretive as they can means they must attack their victims with brutal efficiency, they will plan their attacks weeks and even months in advance to ensure they spend as little time as they can on a victim, ensuring both a swift exit without much, if any, evidence left and allowing them to plot their next strike, with a windfall of funds, of course. They will employ “hostage” tactics, planting ransom ware on their victims’ computers as soon as they can access them, while extracting the data themselves, using credentials which they will have phished from employees or gaining access through brute forcing their way into systems.
+                    </div>
+                </article>
+
+                <article>
+                    <div>
+                        <h1>Hack to the Future</h1>
+                        Amateur Film Buffs<br><br>
+                        Location: UK, Slough<br>
+                        Group Size: 5 people
+
+                        <h1>Who are they?</h1>
+                        Hack to the Future are a tiny group of film buffs who use their amateur hacker skills to attack film studios so they can attempt to force Universal to release a sequel to the cult classic “Back To The Future”.
+
+                        <h1>What are their motives?</h1>
+                        As stated previously, they target film studios so that they can pressure Universal into releasing a new movie in the “Back To The Future” franchise. They do it for no financial gain, nor are they politically motivated. They simply love Doc Brown and Marty McFly.
+
+                        <h1>What are their tactics?</h1>
+                        Being amateur hackers, they use a small amount of attacks, usually using prewritten scripts. You may think that this would mean they have little success, but they have a shocking amount of victories against their targets, although Universal is yet to announce a new project.
+                    </div>
+                </article>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Follow The Bread Crumbs...</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="task2.css">
+    <link rel="stylesheet" href="tabs.css">
+    <link rel="icon" href="/favicon.ico">
+    <script defer src="task_header.js"></script>
+    <script defer src="task_validate.js"></script>
+</head>
+<body>
+    <header>
+        <img src="/logo-shu.svg" alt="SHU Logo">
+        <div>
+            <a href="/" class="nav-button">Back To Homepage</a>
+        </div>
+    </header>
+
+    <div id="divider"></div>
+
+    <article>
+        <div>
+            <iframe src="task2_resources/follow_the_bread_crumbs.pdf"></iframe>
+            <div id="buttons">
+                <div id="start_link">
+                    <a href="https://www.google.com/search?q=busterping" target="_blank">Begin Search</a>
+                </div>
+                <div id="answer">
+                    <div>
+                        <label class="task1_title" for="question">What is the password for <span>super_secret.7z</span>?</label>
+                        <form class="task1_question_container" onsubmit="check_answer(this, 'aG9yYXRpb215YmVzdGZyaWVuZA=='); return false;">
+                            <input type="text" id="question">
+                            <input type="submit" value="Check">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+</body>
+</html>
+

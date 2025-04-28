@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Steganography</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="task3.css">
+    <link rel="icon" href="/favicon.ico">
+    <script defer src="task_validate.js"></script>
+</head>
+<body>
+    <header>
+        <img src="/logo-shu.svg" alt="SHU Logo">
+        <div>
+            <a href="/" class="nav-button">Back To Homepage</a>
+        </div>
+    </header>
+
+    <div id="divider"></div>
+
+    <article>
+        <div>
+            <h1>Steganography</h1>
+
+            <h1>What is steganography?</h1>
+            Steganography is the practice of concealing information within another message or physical object to avoid detection.<br><br>
+
+            Some examples of steganography involve embedding a secret piece of text inside a picture, video or audio file.<br><br>
+
+            You could also hide a secret message or script inside of a Word or Excel document.
+
+            <h1>How we will use it today.</h1>
+            Recently we have found evidence of multiple different images being used to relay hidden messages between a well-known criminals. You have been hired by the local police force to decrypt a message by using steganography on the images found to find out the name of the suspect and what the hidden passkey they use to encrypt their hidden message. Once the images are decrypted the words fill out a grid to reveal the hidden name and passkey.<br><br>
+            <div id="code">U2FsdGVkX19epGFOaNeLgj13gnhvK3OmBWO2XSN6wsO3LaXKpmyJhyBwzq0yjOpo2OvfQIUeLE7dJb/4+VxiGnQE30KMIpcgdTOE3ihSvuEVD0n/emyAL5Ni95kHQNn7</div><br><br>
+
+            This is the encrypted message we believe it will show us the suspects address and email.<br><br>
+
+            List of suspects:
+            <div id="list_container">
+                <ul>
+                   <li>Thomas</li>
+                   <li>Martin</li>
+                   <li>Buster</li>
+                   <li>Lauren</li>
+                   <li>Rachel</li>
+                   <li>Taylor</li>
+                </ul>
+            </div>
+
+            Extracting the messages will be done using <a href="https://stylesuxx.github.io/steganography/" target="_blank">this tool</a>.
+
+
+            <h1>Image Set 1</h1>
+
+            <a href="task3_resources/Image Set 1.zip">Download Images</a><br><br><br>
+
+            <div class="grid_question">
+                <label for="question1">I’m tied in bows, I come in flair, You’ll find me wrapped with love and care. What am I?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'cmliYm9u'); return false;">
+                    <input type="text" id="question1" class="task3_input" maxlength="6">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+            <div class="grid_question">
+                <label for="question2">I go up just to come back down, I never stay long on the ground. What am I?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'Ym91bmNl'); return false;">
+                    <input type="text" id="question2" class="task3_input" maxlength="6">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+            <div class="grid_question">
+                <label for="question3">I provide the place, the space, the time, For events or sites to truly shine. What am I?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'aG9zdGVk'); return false;">
+                    <input type="text" id="question3" class="task3_input" maxlength="6">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+            <div class="grid_question">
+                <label for="question4">I stand with a bat, eyes on the ball, Swing and a hit—I might beat them all. What am I?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'YmF0dGVy'); return false;">
+                    <input type="text" id="question4" class="task3_input" maxlength="6">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+            <div class="grid_question">
+                <label for="question5">They gallop fast with strength and grace, Once bore knights in every place. What are they?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'c3RlZWRz'); return false;">
+                    <input type="text" id="question5" class="task3_input" maxlength="6">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+            <div class="grid_question">
+                <label for="question6">I’m found in the gym, where muscles grow strong, Lift me with care, I help you along. What am I?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'YmFyYmVs'); return false;">
+                    <input type="text" id="question6" class="task3_input" maxlength="6">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+
+            <br><br>
+
+            After filling in every row, look at the columns.<br>
+            One of them contains the correct suspect's name.<br><br> 
+
+            <div class="conclusion_question">
+                <label for="question7">Which suspect's name is present?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'YnVzdGVy'); return false;">
+                    <input type="text" id="question7" class="task3_input">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+
+            <br>
+
+            <h1>Image Set 2</h1>
+
+            <a href="task3_resources/Image Set 2.zip">Download Images</a><br><br><br>
+
+            <div class="grid_question">
+                <label for="question8">Many pieces, one big view, Fit just right to make it true. What am I?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'amlnc2F3'); return false;">
+                    <input type="text" id="question8" class="task3_input" maxlength="6">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+            <div class="grid_question">
+                <label for="question9">Covered tight in paper or bow, To see what’s inside, you know where to go. What must you do?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'dW53cmFw'); return false;">
+                    <input type="text" id="question9" class="task3_input" maxlength="6">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+            <div class="grid_question">
+                <label for="question10">I give live birth, I nurse my young, With fur or hair, I can be sprung. What am I?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'bWFtbWFs'); return false;">
+                    <input type="text" id="question10" class="task3_input" maxlength="6">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+            <div class="grid_question">
+                <label for="question11">I circle your wrist, shiny and bright, A piece of jewellery, day or night. What am I?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'YmFuZ2xl'); return false;">
+                    <input type="text" id="question11" class="task3_input" maxlength="6">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+            <div class="grid_question">
+                <label for="question12">I hide and watch, but don’t take part, Silent and still, I play my part. What am I?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'bHVya2Vy'); return false;">
+                    <input type="text" id="question12" class="task3_input" maxlength="6">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+            <div class="grid_question">
+                <label for="question13">I stretch out, reach far and wide, Lengthen something that’s inside. What am I?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'ZXh0ZW5k'); return false;">
+                    <input type="text" id="question13" class="task3_input" maxlength="6">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+
+            <br><br>
+
+            One of the columns will contain an English word.<br>
+            Use <a href="https://encrypt-online.com/decrypt" target="_blank">this tool</a> to decrypt <a href="#code">the hidden message</a>, using the word (in all caps) as the key (passphrase).<br><br>
+
+            <div class="conclusion_question">
+                <label for="question14">What is the suspect's email address?</label>
+                <form class="task3_question_container" onsubmit="check_answer(this, 'cGluZ21yMzQ5QGdtYWlsLmNvbQ=='); return false;">
+                    <input type="text" id="question14" class="task3_input">
+                    <input type="submit" value="Check" class="task3_check">
+                </form>
+            </div>
+            <br><br><br>
+        </div>
+    </article>
+</body>
+</html>
+

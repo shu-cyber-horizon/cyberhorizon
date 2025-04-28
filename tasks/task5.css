@@ -1,0 +1,79 @@
+#tabs {
+    margin-bottom: 0 !important;
+}
+
+.nested_tabs {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #621b5e;
+    margin-bottom: 20px;
+}
+
+#tabs label {
+    padding: 0.5rem 2ch !important;
+}
+
+.nested_tabs label {
+    padding: 0.5rem 2ch;
+    color: white;
+}
+
+.nested_tabradios { display: none; }
+
+article:has(.nested_tabradios input:nth-child(1):checked) .nested_tabs label:nth-child(1) {
+    background-color: #ba007a;
+}
+article:not(:has(.nested_tabradios input:nth-child(1):checked)) .nested_pages > article:nth-child(1) { display: none; }
+
+article:has(.nested_tabradios input:nth-child(2):checked) .nested_tabs label:nth-child(2) {
+    background-color: #ba007a;
+}
+article:not(:has(.nested_tabradios input:nth-child(2):checked)) .nested_pages > article:nth-child(2) { display: none; }
+
+article:has(.nested_tabradios input:nth-child(3):checked) .nested_tabs label:nth-child(3) {
+    background-color: #ba007a;
+}
+article:not(:has(.nested_tabradios input:nth-child(3):checked)) .nested_pages > article:nth-child(3) { display: none; }
+
+article:has(.nested_tabradios input:nth-child(4):checked) .nested_tabs label:nth-child(4) {
+    background-color: #ba007a;
+}
+article:not(:has(.nested_tabradios input:nth-child(4):checked)) .nested_pages > article:nth-child(4) { display: none; }
+
+
+.nested_pages > article {
+    display: flex;
+    justify-content: center;
+}
+
+.nested_pages > article > div {
+    font-size: 1.2rem;
+    max-width: 80ch;
+    margin: 0 6ch;
+    text-align: center;
+}
+
+.nested_pages > article h1 {
+    font-size: 2rem;
+}
+
+.nested_pages > article label {
+    font-size: 1.4rem;
+}
+
+form {
+    display: flex;
+}
+
+.task5_input {
+    font-size: 1.4rem;
+    flex-grow: 1;
+    margin-right: 2ch;
+    border: none;
+    border-bottom: solid black;
+}
+
+#pages {
+    margin-bottom: 4rem;
+}
+

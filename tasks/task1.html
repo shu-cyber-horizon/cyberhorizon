@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Crack The Code</title>
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="task1.css">
+    <link rel="stylesheet" href="tabs.css">
+    <link rel="icon" href="/favicon.ico">
+    <script defer src="task_header.js"></script>
+    <script defer src="task_validate.js"></script>
+    <script defer src="task1_wheel.js"></script>
+</head>
+<body>
+    <header>
+        <img src="/logo-shu.svg" alt="SHU Logo">
+        <div>
+            <a href="/" class="nav-button">Back To Homepage</a>
+        </div>
+    </header>
+
+    <div id="tabs">
+        <label for="activitysheet_radio">Activity Sheet</label>
+        <label for="resources_radio">Resources</label>
+    </div>
+    <form id="tabradios">
+        <input type="radio" name="tabs" id="activitysheet_radio" checked>
+        <input type="radio" name="tabs" id="resources_radio">
+    </form>
+
+    <div id="pages">
+        <article id="activitysheet">
+            <div>
+                <h1>Crack The Code</h1>
+                <h2>Use the Resources sheet and posters to help you!</h2>
+    
+                <label class="task1_title" for="question1">Decrypt ‘PSPDOOX’ using a Caesar cipher wheel.<br>
+                     The key is the first two numbers in Sheffield Hallam’s Collegiate Campus postcode.</label>
+                <form class="task1_question_container" onsubmit="check_answer(this, 'ZmlmdGVlbg=='); return false;">
+                    <input type="text" id="question1" class="task1_input">
+                    <input type="submit" value="Check">
+                </form>
+    
+                <label class="task1_title" for="question2">Encrypt ‘NJMPC’ using a Caesar cipher wheel.<br>
+                                                           The answer from the last question is the key.</label>
+                <form class="task1_question_container" onsubmit="check_answer(this, 'Y3liZXI='); return false;">
+                    <input type="text" id="question2" class="task1_input">
+                    <input type="submit" value="Check">
+                </form>
+    
+                <label class="task1_title" for="question3">Decrypt ‘ADMNO’ using a Caesar cipher wheel.<br>
+                                                           The student’s age is the key.</label>
+                <form class="task1_question_container" onsubmit="check_answer(this, 'Zmlyc3Q='); return false;">
+                    <input type="text" id="question3" class="task1_input">
+                    <input type="submit" value="Check">
+                </form>
+    
+                <label class="task1_title" for="question4">Decrypt ‘JMNITNBP’ using a Vigenère table.<br>
+                                                           The answers from question 2 and 3 are the key.</label>
+                <form class="task1_question_container" onsubmit="check_answer(this, 'aG9tZWNpdHk='); return false;">
+                    <input type="text" id="question4" class="task1_input">
+                    <input type="submit" value="Check">
+                </form>
+    
+                <label class="task1_title" for="question5">Decrypt ‘BCGQX AGSI’ using a Vigenère table.<br>
+                                                           Use the clues about the student’s university degree to find the key.</label>
+                <form class="task1_question_container" onsubmit="check_answer(this, 'bW92aWUgc2VhdA=='); return false;">
+                    <input type="text" id="question5" class="task1_input">
+                    <input type="submit" value="Check">
+                </form>
+    
+                <label class="task1_title" for="question6">Using the clues provided in the posters, solve question 4 to determine the location.<br>
+                                                           Once you have the location, translate each letter into its corresponding ASCII value and calculate their total.<br>
+                                                           Then, use the answer to question 5 and add it to your ASCII total to discover the final answer.</label>
+                <form class="task1_question_container" onsubmit="check_answer(this, 'NzIz'); return false;">
+                    <input type="text" id="question6" class="task1_input">
+                    <input type="submit" value="Check">
+                </form>
+    
+                <label class="task1_title" for="question7" id="question7_title"><span>Challenge Question</span><br>
+                                                                                Find the hidden message that has been encrypted using the dancing man cipher!</label>
+                <img src="task1_resources/dancing_man_cipher.png" id="question7_img">
+                <form class="task1_question_container" onsubmit="check_answer(this, 'dGhhbmsgeW91IGZvciBqb2luaW5nIHVz'); return false;">
+                    <input type="text" id="question7" class="task1_input">
+                    <input type="submit" value="Check">
+                </form>
+            </div>
+        </article>
+    
+        <article id="resources">
+            <div>
+                <h2>Caesar Cipher</h2>
+                <div>
+                    A caesar cipher wheel is an encryption tool that helps you hide messages! It has two wheels. You can spin the smaller wheel a specific number of places known as the key. This shifts the alphabet allowing you to make a hidden message by writing it using the corresponding letter.<br>
+                    <br>
+                    Example: A sentence was encrypted with a shift of 7. The result of this is “FVB JYHJRLK AOL JVKL”. What was the original sentence?<br>
+                    Steps:<br>
+                    1) Write out the alphabet.<br>
+                    2) Next to the original alphabet, write out the shifted alphabet next to it.<br>
+                    3) Find each letter of the encrypted sentence in the shifted version of the alphabet.<br>
+                    4) Take the original letter of the alphabet it corresponds to.<br>
+                    5) Put these letters together to find the original sentence.<br>
+                    <br>
+                    <span>Answer = You cracked the code</span><br>
+                </div>
+    
+                <h2>Caesar Cipher Wheel</h2>
+                <div>
+                    Encoding:<br>
+                    1) Find each letter of your message on the inner ring.<br>
+                    2) Move along the wheel until you find the corresponding shifted letter on the outer ring.<br>
+                    3) Write down the new letter from the outer ring.<br>
+                    <br>
+                    Decoding:<br>
+                    To decode, you do the reverse process.<br>
+                    1) Align the inner and outer rings based on the shift you used for encoding.<br>
+                    2) Find the letter on the outer ring and move to the inner ring to find the original letter.<br>
+                    <br>
+                    <br>
+                    <form onsubmit='return false;'>
+                        <label for="wheelshift">Shift: </label>
+                        <input type="number" id="wheelshift" min="-1" max="26" step="1" value="0" onchange="rotateWheel(this)">
+                    </form>
+
+                    <div id="cipherwheel">
+                        <img src="task1_resources/codewheel_outer.png" id="wheel_outer">
+                        <img src="task1_resources/codewheel_inner.png" id="wheel_inner">
+                    </div>
+
+                </div>
+    
+                <h2>Vigenere</h2>
+                <div>
+                    A vigenere table is a big grid with all the letters of the alphabet written across the top and down the side. <br>
+                    <br>
+                    Example: The message is “LXFOPVEFRNHR”. Decrypt this using the key “Lemon”.<br>
+                    Steps:<br>
+                    1) Write out the key to fit the length of the message. (LEMONLEMONLE)<br>
+                    2) Take the first letter of the key and the message.<br>
+                    3) Find the key letter in the left column and follow the row until you reach your message letter. (In this case, follow the 'L' row until you find 'L'.)<br>
+                    4) Find the top row plaintext value this aligns with. (The top row shows the plaintext letter 'A').<br>
+                    5) Repeat for all letters in the message.<br>
+                    6) Put it together.<br>
+                    <br>
+                    Answer = Attack at dawn<br>
+                    <br>
+                    <img src="task1_resources/vigenere_table.png">
+                </div>
+    
+                <h2>ASCII</h2>
+                <div>
+                    ASCII is a system used to represent text and characters in computers. It assigns a unique number to each letter, number, or symbol you see on your screen. To use it, pick a letter, find it on the chart, and look at its matching number.
+                    <br>
+                    <img src="task1_resources/ascii_table.png">
+                </div>
+
+            </div>
+        </article>
+    </div>
+
+</body>
+</html>
+

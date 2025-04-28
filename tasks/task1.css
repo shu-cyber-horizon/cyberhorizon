@@ -1,0 +1,71 @@
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+article > div {
+    font-size: 1.2rem;
+    max-width: 60ch;
+    margin: 0 6ch;
+}
+
+#activitysheet h1 {
+    font-size: 3rem;
+}
+#activitysheet h2 {
+    font-size: 1.6rem;
+}
+
+#activitysheet {
+    text-align: center;
+}
+
+#resources span {
+    font-weight: bold;
+}
+
+.task1_title {
+    display: block;
+    color: white;
+    background-color: #114195;
+    padding: 0.2em 2ch;
+    border-radius: 3ch;
+}
+
+.task1_question_container {
+    display: flex;
+    margin: 1em 0 3em;
+}
+
+.task1_input {
+    border: none;
+    border-bottom: dotted black;
+    flex-grow: 1;
+    margin: 0 2ch;
+}
+
+#question7_title { background-color: #119538; }
+
+#question7_title span { font-weight: bold; }
+
+article img {
+    display: block;
+    max-width: 100%;
+}
+
+#cipherwheel {
+    position: relative;
+}
+
+#wheel_inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#resources {
+    margin-bottom: 2rem;
+}
+

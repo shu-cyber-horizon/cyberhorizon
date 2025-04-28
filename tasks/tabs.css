@@ -1,0 +1,32 @@
+#tabs {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #621b40;
+    margin-bottom: 20px;
+}
+
+#tabs label {
+    padding: 1rem 2ch;
+    color: white;
+}
+
+#tabradios { display: none; }
+
+/* Using CSS instead of Javascript for tabs means that there can only be as many tabs as there are blocks here, but it has the advantage of everything just working.
+ * If tabs were to be implemented in Javascript, then the contents of the page being removed instead of hidden would mean that anything entered wouldn't persist when switching between tabs.
+ */
+body:has(#tabradios input:nth-child(1):checked) #tabs label:nth-child(1) {
+    background-color: var(--highlight);
+}
+body:not(:has(#tabradios input:nth-child(1):checked)) #pages > article:nth-child(1) { display: none; }
+
+body:has(#tabradios input:nth-child(2):checked) #tabs label:nth-child(2) {
+    background-color: var(--highlight);
+}
+body:not(:has(#tabradios input:nth-child(2):checked)) #pages > article:nth-child(2) { display: none; }
+
+body:has(#tabradios input:nth-child(3):checked) #tabs label:nth-child(3) {
+    background-color: var(--highlight);
+}
+body:not(:has(#tabradios input:nth-child(3):checked)) #pages > article:nth-child(3) { display: none; }
+
